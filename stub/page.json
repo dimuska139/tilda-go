@@ -1,0 +1,36 @@
+{
+  "status": "FOUND",
+  "result": {
+    "id": "12345",
+    "projectid": "54321",
+    "date": "2024-12-15 13:20:30",    "title": "Photography blog",
+    "descr": "Photographer's blog with tiled galleries and email subscription.",
+    "img": "",
+    "sort": "20",
+    "published": "1734259400",
+    "featureimg": "",
+    "alias": "blog",
+    "filename": "page12345.html",
+    "html": "<!--allrecords--> <div id=\"allrecords\" class=\"t-records\" data-hook=\"blocks-collection-content-node\" data-tilda-project-id=\"54321\" data-tilda-page-id=\"12345\" data-tilda-page-alias=\"blog\" data-tilda-formskey=\"qwerty\" data-tilda-cookie=\"no\" data-tilda-lazy=\"yes\" data-tilda-root-zone=\"one\"></div> <!--/allrecords-->",
+    "js": [
+      "https://static.tildacdn.com/js/tilda-polyfill-1.0.min.js",
+
+      "https://static.tildacdn.com/js/tilda-scripts-3.0.min.js",
+      "https://static.tildacdn.com/ws/project54321/tilda-blocks-page12345.min.js?t=1734259633",
+      "https://static.tildacdn.com/js/tilda-lazyload-1.0.min.js",
+      "https://static.tildacdn.com/js/tilda-forms-1.0.min.js",
+      "https://static.tildacdn.com/js/tilda-zero-1.1.min.js",
+      "https://static.tildacdn.com/js/tilda-popup-1.0.min.js",
+      "https://static.tildacdn.com/js/tilda-zero-scale-1.0.min.js",
+      "https://static.tildacdn.com/js/tilda-events-1.0.min.js",
+      "https://static.tildacdn.com/js/tilda-stat-1.0.min.js"
+    ],
+    "css": [
+      "https://static.tildacdn.com/css/tilda-grid-3.0.min.css",
+      "https://static.tildacdn.com/ws/project54321/tilda-blocks-page12345.min.css?t=1734259633",
+      "https://static.tildacdn.com/css/tilda-forms-1.0.min.css",
+      "https://static.tildacdn.com/css/tilda-popup-1.1.min.css",
+      "https://static.tildacdn.com/css/fonts-tildasans.css"
+    ]
+  }
+}

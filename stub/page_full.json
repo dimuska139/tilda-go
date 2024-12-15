@@ -1,0 +1,17 @@
+{
+  "status": "FOUND",
+  "result": {
+    "id": "12345",
+    "projectid": "54321",
+    "date": "2024-12-15 13:20:30",
+    "title": "Photography blog",
+    "descr": "Photographer's blog with tiled galleries and email subscription.",
+    "img": "",
+    "sort": "20",
+    "published": "1734259400",
+    "featureimg": "",
+    "alias": "blog",
+    "filename": "page12345.html",
+    "html": "<!DOCTYPE html> <html>...<\/html>"
+  }
+}

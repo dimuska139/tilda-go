@@ -1,0 +1,27 @@
+### Getting the List of Projects
+GET {{host}}/v1/getprojectslist/?publickey={{publickey}}&secretkey={{secretkey}}
+Content-Type: application/json
+
+### Getting Project Information
+GET {{host}}/v1/getprojectinfo/?publickey={{publickey}}&secretkey={{secretkey}}&projectid={{projectid}}
+Content-Type: application/json
+
+### Getting the List of Project Pages
+GET {{host}}/v1/getpageslist/?publickey={{publickey}}&secretkey={{secretkey}}&projectid={{projectid}}
+Content-Type: application/json
+
+### Getting the Page Information + body HTML code
+GET {{host}}/v1/getpage/?publickey={{publickey}}&secretkey={{secretkey}}&pageid={{pageid}}
+Content-Type: application/json
+
+### Getting the Page Information + full HTML code
+GET {{host}}/v1/getpagefull/?publickey={{publickey}}&secretkey={{secretkey}}&pageid={{pageid}}
+Content-Type: application/json
+
+### Getting the Page Information For Export + body page HTML code
+GET {{host}}/v1/getpageexport/?publickey={{publickey}}&secretkey={{secretkey}}&pageid={{pageid}}
+Content-Type: application/json
+
+### Getting the Page Information For Export + full page HTML code
+GET {{host}}/v1/getpagefullexport/?publickey={{publickey}}&secretkey={{secretkey}}&pageid={{pageid}}
+Content-Type: application/json

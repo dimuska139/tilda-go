@@ -1,0 +1,20 @@
+{
+  "status": "FOUND",
+  "result": [
+    {
+      "id": "123",
+      "title": "My project 1",
+      "descr": "Description of my project 1"
+    },
+    {
+      "id": "124",
+      "title": "My project 2",
+      "descr": "Description of my project 2"
+    },
+    {
+      "id": "125",
+      "title": "My project 3",
+      "descr": "Description of my project 3"
+    }
+  ]
+}

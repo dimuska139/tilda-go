@@ -1,0 +1,71 @@
+{
+  "status": "FOUND",
+  "result": {
+    "id": "12345",
+    "projectid": "54321",
+    "date": "2024-12-15 13:20:30",
+    "title": "Photography blog",
+    "descr": "Photographer's blog with tiled galleries and email subscription.",
+    "img": "",
+    "sort": "20",
+    "published": "1734259400",
+    "featureimg": "",
+    "alias": "blog",
+    "filename": "page12345.html",
+    "export_jspath": "",
+    "export_csspath": "",
+    "export_imgpath": "",
+    "export_basepath": "",
+    "project_alias": "mysiteqwerty",
+    "page_alias": "blog",
+    "project_domain": "",
+    "html": "<!DOCTYPE html> <html>...<\/html>",
+    "images": [
+      {
+        "from": "https:\/\/static.tildacdn.com\/img\/tildacopy.png",
+        "to": "tildacopy.png"
+      },
+      {
+        "from": "https:\/\/static.tildacdn.com\/img\/tildacopy_black.png",
+        "to": "tildacopy_black.png"
+      }
+    ],
+    "js": [
+      {
+        "from": "https:\/\/static.tildacdn.com\/js\/tilda-polyfill-1.0.min.js",
+        "to": "tilda-polyfill-1.0.min.js",
+        "attrs": [
+          "nomodule"
+        ]
+      },
+      {
+        "from": "https:\/\/static.tildacdn.com\/js\/tilda-scripts-3.0.min.js",
+        "to": "tilda-scripts-3.0.min.js",
+        "attrs": [
+          "defer"
+        ]
+      },
+      {
+        "from": "https:\/\/static.tildacdn.com\/js\/lazyload-1.3.min.export.js",
+        "to": "lazyload-1.3.min.export.js",
+        "attrs": [
+          "async"
+        ]
+      },
+      {
+        "from": "https:\/\/static.tildacdn.com\/js\/tilda-stat-1.0.min.js",
+        "to": "tilda-stat-1.0.min.js"
+      }
+    ],
+    "css": [
+      {
+        "from": "https:\/\/static.tildacdn.com\/css\/tilda-popup-1.1.min.css",
+        "to": "tilda-popup-1.1.min.css"
+      },
+      {
+        "from": "https:\/\/static.tildacdn.com\/css\/fonts-tildasans.css",
+        "to": "fonts-tildasans.css"
+      }
+    ]
+  }
+}

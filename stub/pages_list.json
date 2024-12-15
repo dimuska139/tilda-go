@@ -1,0 +1,31 @@
+{
+  "status": "FOUND",
+  "result": [
+    {
+      "id": "12345",
+      "projectid": "54321",
+      "date": "2024-12-14 19:07:00",
+      "title": "Main page",
+      "descr": "Description of main page",
+      "img": "https://static.tildacdn.com/tild3039-6533-4362-b934-12345/___2024-06-13_13-35-.png",
+      "sort": "10",
+      "published": "1734258070",
+      "featureimg": "",
+      "alias": "",
+      "filename": "page12345.html"
+    },
+    {
+      "id": "123456",
+      "projectid": "54321",
+      "date": "2024-12-15 13:20:30",
+      "title": "Photography blog",
+      "descr": "Photographer's blog with tiled galleries and email subscription.",
+      "img": "",
+      "sort": "20",
+      "published": "1734259400",
+      "featureimg": "",
+      "alias": "blog",
+      "filename": "page123456.html"
+    }
+  ]
+}
