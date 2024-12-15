@@ -37,6 +37,7 @@ func (c *Client) GetProjectInfo(ctx context.Context, projectID string) (Project,
 	return response.Result, nil
 }
 
+// GetProjectPages returns the list of pages for the project
 func (c *Client) GetProjectPages(ctx context.Context, projectID string) ([]Page, error) {
 	type Response struct {
 		Status string `json:"status"`

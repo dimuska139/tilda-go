@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/dimuska139/tilda-go/blob/master/LICENSE)
 
-This is unofficial Tilda SDK for GO applications. This library contains methods for interacting with the [Tilda API](https://tilda.cc/).
+This is unofficial Tilda SDK for GO applications. This library contains methods for interacting with the [Tilda API](https://help.tilda.cc/api).
 
 ## Installation
 

@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-// GetPage returns detailed page information
+// GetPage returns detailed page information with body HTML code
 func (c *Client) GetPage(ctx context.Context, pageID string) (Page, error) {
 	type Response struct {
 		Status string `json:"status"`
@@ -22,7 +22,7 @@ func (c *Client) GetPage(ctx context.Context, pageID string) (Page, error) {
 	return response.Result, nil
 }
 
-// GetPageFull returns detailed page information
+// GetPageFull returns detailed page information without images, js and css but with full HTML code
 func (c *Client) GetPageFull(ctx context.Context, pageID string) (PageFull, error) {
 	type Response struct {
 		Status string   `json:"status"`
@@ -39,7 +39,7 @@ func (c *Client) GetPageFull(ctx context.Context, pageID string) (PageFull, erro
 	return response.Result, nil
 }
 
-// GetPageExport returns detailed page information
+// GetPageExport returns detailed page information for export with body HTML code
 func (c *Client) GetPageExport(ctx context.Context, pageID string) (PageExport, error) {
 	type Response struct {
 		Status string     `json:"status"`
@@ -56,7 +56,7 @@ func (c *Client) GetPageExport(ctx context.Context, pageID string) (PageExport, 
 	return response.Result, nil
 }
 
-// GetPageFullExport returns detailed page information
+// GetPageFullExport returns detailed page information for export with full HTML code
 func (c *Client) GetPageFullExport(ctx context.Context, pageID string) (PageExport, error) {
 	type Response struct {
 		Status string     `json:"status"`

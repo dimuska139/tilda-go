@@ -35,6 +35,7 @@ type Client struct {
 	baseURL    string
 }
 
+// NewClient creates new Tilda client
 func NewClient(config *Config, options ...func(*Client)) *Client {
 	client := &Client{
 		config:     config,
@@ -49,12 +50,14 @@ func NewClient(config *Config, options ...func(*Client)) *Client {
 	return client
 }
 
+// WithBaseURL option allows to set custom base url (if you use proxy, for example)
 func WithBaseURL(baseURL string) func(*Client) {
 	return func(s *Client) {
 		s.baseURL = baseURL
 	}
 }
 
+// WithCustomHttpClient option allows to set custom http client
 func WithCustomHttpClient(httpClient *http.Client) func(*Client) {
 	return func(s *Client) {
 		s.httpClient = httpClient

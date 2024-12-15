@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// DateTime is a custom type for time.Time that allows to unmarshal JSON with a specific format
 type DateTime time.Time
 
 const dtFormat = "2006-01-02 15:04:05"

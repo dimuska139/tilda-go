@@ -3,12 +3,14 @@ package tilda_go
 import "time"
 
 type (
+	// Project represents short information about project in the projects list
 	Project struct {
 		ID          string `json:"id"`
 		Title       string `json:"title"`
 		Description string `json:"descr"`
 	}
 
+	// ProjectInfo represents information about project
 	ProjectInfo struct {
 		ID                 string    `json:"id"`
 		UserID             string    `json:"userid"`
@@ -68,52 +70,26 @@ type (
 		Images             []Image   `json:"images"`
 	}
 
-	ExportedProject struct {
-		ID             string    `json:"id"`
-		ProjectID      string    `json:"projectid"`
-		Date           time.Time `json:"date"`
-		Title          string    `json:"title"`
-		Description    string    `json:"descr"`
-		Img            string    `json:"img"`
-		Sort           int       `json:"sort,string"`
-		Published      int       `json:"published,string"`
-		FeatureImg     string    `json:"featureimg"`
-		Alias          string    `json:"alias"`
-		Filename       string    `json:"filename"`
-		ExportJsPath   string    `json:"export_jspath"`
-		ExportCssPath  string    `json:"export_csspath"`
-		ExportImgPath  string    `json:"export_imgpath"`
-		ExportBasePath string    `json:"export_basepath"`
-		ProjectAlias   string    `json:"project_alias"`
-		PageAlias      string    `json:"page_alias"`
-		ProjectDomain  string    `json:"project_domain"`
-		HTML           string    `json:"html"`
-		Images         []Image   `json:"images"`
-		Js             []JS      `json:"js"`
-		Css            []CSS     `json:"css"`
-	}
-
-	PageInfo struct {
-		Page
-		HTML string `json:"html"`
-	}
-
+	// Image represents information about image
 	Image struct {
 		From string `json:"from"`
 		To   string `json:"to"`
 	}
 
+	// JS represents information about JS asset
 	JS struct {
 		From  string   `json:"from"`
 		To    string   `json:"to"`
 		Attrs []string `json:"attrs"`
 	}
 
+	// CSS represents information about CSS asset
 	CSS struct {
 		From string `json:"from"`
 		To   string `json:"to"`
 	}
 
+	// Page represents information about page with body HTML code
 	Page struct {
 		ID          string   `json:"id"`
 		ProjectID   string   `json:"projectid"`
@@ -131,6 +107,7 @@ type (
 		CSS         []string `json:"css"`
 	}
 
+	// PageFull represents information about page without images, js and css but with full HTML code
 	PageFull struct {
 		ID          string   `json:"id"`
 		ProjectID   string   `json:"projectid"`
@@ -146,6 +123,7 @@ type (
 		Filename    string   `json:"filename"`
 	}
 
+	// PageExport represents information about page for export
 	PageExport struct {
 		ID             string   `json:"id"`
 		ProjectID      string   `json:"projectid"`
