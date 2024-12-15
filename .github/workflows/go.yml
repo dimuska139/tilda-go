@@ -1,25 +1,20 @@
-name: Go
+name: Run tests and upload coverage
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  push
 
 jobs:
-
   build:
+    name: Run tests and collect coverage
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
       - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: '1.22'
+        uses: actions/setup-go@v5
 
       - name: Install dependencies
-        run: go mod tidy
+        run: go mod download
 
       - name: Run tests with coverage
         run: go test -v -coverprofile=coverage.txt ./...
@@ -28,6 +23,4 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: coverage.txt
-          flags: unittests
-          fail_ci_if_error: true
+          slug: dimuska139/tilda-go
