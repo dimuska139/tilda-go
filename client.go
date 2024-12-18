@@ -87,11 +87,7 @@ func (c *Client) doRequest(ctx context.Context, path string, params map[string]a
 		return &TildaError{http.StatusServiceUnavailable, url, "", fmt.Errorf("do request: %w", err)}
 	}
 
-	if resp != nil {
-		defer resp.Body.Close()
-	} else {
-		return &TildaError{http.StatusServiceUnavailable, url, "", errors.New("response is nil")}
-	}
+	defer resp.Body.Close()
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
